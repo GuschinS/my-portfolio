@@ -1,0 +1,25 @@
+.container {
+  padding-top: 2em;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  line-height: 1.5;
+  padding-left: 1em;
+  color: rgba(0, 0, 0, 0.6);
+}
+ul {
+  list-style-type: none;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 1em;
+  a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    transition-duration: 300ms;
+    &:hover {
+      transition-duration: 300ms;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
