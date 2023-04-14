@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  .example-card {
+    margin-top: 2em;
+    width: 300px;
+    img {
+      cursor: pointer;
+      transition-duration: 400ms;
+      &:hover {
+        filter: brightness(80%);
+        transition-duration: 400ms;
+      }
+    }
+  }
+}

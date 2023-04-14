@@ -1,0 +1,19 @@
+<div class="container">
+  <ng-container *ngFor="let card of cards">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{card.title}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{card.image}}" alt="{{card.title}}">
+      <mat-card-content>
+        <!-- <mat-card-subtitle>{{card.description}}</mat-card-subtitle> -->
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button [disabled]="card.deploy === ''" (click)="openLink(card.deploy)">DEPLOY
+        </button>
+        <button mat-button [disabled]="card.code === ''" (click)="openLink(card.code)">CODE
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </ng-container>
+</div>
