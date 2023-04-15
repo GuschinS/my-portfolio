@@ -1,5 +1,13 @@
+:host {
+  flex: 1;
+}
 .container {
-  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 90%;
+  padding: 2em 1em;
 }
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -13,6 +21,7 @@ ul {
   line-height: 2;
   color: rgba(0, 0, 0, 0.6);
   padding-left: 1em;
+  margin-top: 0;
   a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
