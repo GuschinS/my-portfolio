@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingProjectsService } from '../../services/loading-projects.service';
-import { ProjectModel } from '../../models/project.model';
+import { LoadingProjectsService } from 'src/app/services/loading-projects.service';
+import { ProjectModel } from 'src/app/models/project.model';
+import { IdOfSelectCardService } from 'src/app/services/id-of-select-card.service';
 
 @Component({
   selector: 'app-projects',
@@ -10,7 +11,11 @@ import { ProjectModel } from '../../models/project.model';
 export class ProjectsComponent implements OnInit {
   cards!: ProjectModel[];
 
-  constructor(private loadingProjects: LoadingProjectsService) {}
+  constructor(
+    private loadingProjects: LoadingProjectsService,
+    private idOfSelectCardService: IdOfSelectCardService
+  ) {}
+
   ngOnInit(): void {
     this.getAll();
   }
@@ -24,7 +29,7 @@ export class ProjectsComponent implements OnInit {
   openLink(url: string) {
     window.open(url, '_blank');
   }
-  goToDetails(id: number) {
-    console.log(id);
-  }
+  goToDetails = (id: number) => {
+    this.idOfSelectCardService.id.next(id);
+  };
 }
