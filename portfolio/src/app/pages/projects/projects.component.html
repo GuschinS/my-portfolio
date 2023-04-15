@@ -4,9 +4,11 @@
       <mat-card-header>
         <mat-card-title>{{card.title}}</mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="{{card.image}}" alt="{{card.title}}">
+      <img mat-card-image src="{{card.image}}"
+           alt="{{card.title}}"
+           routerLink='/app-descriptions'
+           (click)="goToDetails(card.id)">
       <mat-card-content>
-        <!-- <mat-card-subtitle>{{card.description}}</mat-card-subtitle> -->
       </mat-card-content>
       <mat-card-actions>
         <button mat-button [disabled]="card.deploy === ''" (click)="openLink(card.deploy)">DEPLOY
