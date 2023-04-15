@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { DescriptionsComponent } from './pages/descriptions/descriptions.component';
 
 
 
@@ -20,7 +21,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    DescriptionsComponent
   ],
   imports: [
     BrowserModule,

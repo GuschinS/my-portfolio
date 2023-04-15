@@ -1,0 +1,49 @@
+:host {
+  flex: 1;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 50px;
+  max-width: 1024px;
+  justify-content: center;
+  width: 95%;
+  .example-card{
+    width: 90%;
+    background-color: rgb(0,0,0,0.05);
+    .row{
+      display: flex;
+      flex-direction: row;
+      mat-card-subtitle{
+        white-space: pre-line;
+      }
+    }
+    img{
+      padding: 1em;
+      width: 50%;
+    }
+    mat-card-content{
+      margin-top: 30px;
+      mat-card-title {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 719px) {
+  .container {
+    width: 90%;
+    padding-bottom: 2em;
+
+    .example-card{
+  .row{
+    flex-direction: column;
+  }
+    img{
+      width: 100%;
+    }
+      mat-card-content{
+        margin-top: 0;
+      }}
+}}
