@@ -7,4 +7,14 @@ body {
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  &.dark-theme {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    .container {
+      p, li, li a, span, {
+        color: white;
+      }
+    }
+  }
 }
+

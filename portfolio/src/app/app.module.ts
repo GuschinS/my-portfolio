@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import {MaterialModule} from "./material/material.module";
+import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -11,8 +11,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { DescriptionsComponent } from './pages/descriptions/descriptions.component';
-
-
+import { DarkModeButtonComponent } from './components/dark-mode-button/dark-mode-button.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,8 @@ import { DescriptionsComponent } from './pages/descriptions/descriptions.compone
     AboutComponent,
     ContactComponent,
     ProjectsComponent,
-    DescriptionsComponent
+    DescriptionsComponent,
+    DarkModeButtonComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +32,6 @@ import { DescriptionsComponent } from './pages/descriptions/descriptions.compone
   ],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
